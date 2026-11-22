@@ -2,90 +2,20 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>DAWLA | دوله 👑</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,sans-serif}
-body{background:#050508;color:#fff;min-height:100vh;padding:18px}
-body::before{content:'';position:fixed;top:-80px;left:-80px;width:280px;height:280px;background:#ff0055;border-radius:50%;filter:blur(100px);opacity:.45;z-index:0}
-body::after{content:'';position:fixed;bottom:-80px;right:-80px;width:280px;height:280px;background:#7b2fff;border-radius:50%;filter:blur(100px);opacity:.45;z-index:0}
-.container{max-width:460px;margin:0 auto;text-align:center;position:relative;z-index:1}
-.avatar{width:125px;height:125px;margin:22px auto 10px;border-radius:50%;padding:4px;background:linear-gradient(45deg,#ff0055,#ffcc00,#7b2fff,#00e5ff)}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Arial,sans-serif;-webkit-tap-highlight-color:transparent}
+body{background:#050508;color:#fff;min-height:100vh;padding:15px;display:flex;justify-content:center}
+body::before{content:'';position:fixed;top:-80px;left:-80px;width:280px;height:280px;background:#ff0055;border-radius:50%;filter:blur(110px);opacity:.45;z-index:0}
+body::after{content:'';position:fixed;bottom:-80px;right:-80px;width:280px;height:280px;background:#7b2fff;border-radius:50%;filter:blur(110px);opacity:.45;z-index:0}
+.container{width:100%;max-width:480px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.avatar{width:125px;height:125px;margin:20px auto 10px;border-radius:50%;padding:4px;background:linear-gradient(45deg,#ff0055,#ffcc00,#7b2fff,#00e5ff)}
 .avatar-inner{width:100%;height:100%;border-radius:50%;background:#111;display:flex;align-items:center;justify-content:center;font-size:58px;font-weight:900}
-h1{font-size:44px;font-weight:900}
+h1{font-size:42px;font-weight:900;line-height:1.2}
 h1 span{background:linear-gradient(90deg,#ff0055,#ffcc00);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .bio{color:#ccc;margin:10px 0 18px;line-height:1.7;font-size:15px}
 .stats{display:flex;gap:10px;justify-content:center;margin-bottom:18px}
 .stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:10px;border-radius:15px;flex:1}
-.stat b{display:block;font-size:17px}.stat span{font-size:12px;color:#aaa}
-.card{background:rgba(255,255,255,.08);backdrop-filter:blur(15px);border:1px solid rgba(255,255,255,.15);border-radius:22px;padding:20px;margin-bottom:15px;text-align:right}
-.card h3{margin-bottom:14px;font-size:18px}
-select{width:100%;padding:16px;border-radius:15px;background:#111;color:#fff;border:1px solid #444;font-size:18px;font-weight:bold;outline:none;margin-bottom:12px}
-select option{background:#111}
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px;border-radius:50px;text-decoration:none;color:#fff;font-weight:bold;font-size:18px;margin-bottom:12px;border:none;cursor:pointer}
-.go{background:linear-gradient(90deg,#ff0055,#ff00aa);box-shadow:0 8px 25px #ff005566}
-.show{background:#222;border:1px solid #444}
-.wa{background:#25D366}
-.call{background:#222;border:1px solid #444}
-.phone-box{background:#111;border:1px dashed #25D366;border-radius:15px;padding:12px;text-align:center;font-size:20px;margin-top:10px}
-.links-list{display:none;background:#0f0f0f;border-radius:15px;padding:8px;margin-top:5px;text-align:center}
-.links-list a{display:block;color:#fff;text-decoration:none;padding:13px;border-bottom:1px solid #222;font-weight:bold}
-.links-list a:last-child{border:none}
-.footer{margin-top:20px;color:#777;font-size:13px}
-</style>
-</head>
-<body>
-<div class="container">
-  <div class="avatar"><div class="avatar-inner">D</div></div>
-  <h1>DAWLA <span>| دوله</span></h1>
-  <p class="bio">أهلا بيك في عالم دوله 👑<br>اختار من القايمة اللي تحت وافتح اللي يعجبك 🔥</p>
-
-  <div class="stats">
-    <div class="stat"><b>👑 دوله</b><span>الاسم الرسمي</span></div>
-    <div class="stat"><b>⚡ سريع</b><span>كل لينكاتي هنا</span></div>
-    <div class="stat"><b>💬 24/7</b><span>برد على الكل</span></div>
-  </div>
-
-  <div class="card">
-    <h3>⚡ اللينكات السريعة - اختار ودوس</h3>
-    <select id="mySelect">
-      <option value="">-- اختار المنصة اللي عايزها --</option>
-      <option value="https://youtube.com/@dawlaofficial">▶️ يوتيوب - دوله</option>
-      <option value="https://tiktok.com/@dawlaofficial">🎵 تيك توك - دوله</option>
-      <option value="https://instagram.com/dawlaofficial">📸 انستجرام - دوله</option>
-      <option value="https://facebook.com/dawlaofficial">📘 فيسبوك - دوله</option>
-      <option value="https://wa.me/201062056341">💬 واتساب - دوله</option>
-    </select>
-    <button class="btn go" onclick="goLink()">🚀 افتح اللينك اللي اخترته</button>
-    <button class="btn show" onclick="showAll()">👀 عرض كل اللينكات تحت بعض</button>
-    <div id="allLinks" class="links-list">
-      <a href="https://youtube.com/@dawlaofficial" target="_blank">▶️ يوتيوب - دوله</a>
-      <a href="https://tiktok.com/@dawlaofficial" target="_blank">🎵 تيك توك - دوله</a>
-      <a href="https://instagram.com/dawlaofficial" target="_blank">📸 انستجرام - دوله</a>
-      <a href="https://facebook.com/dawlaofficial" target="_blank">📘 فيسبوك - دوله</a>
-      <a href="https://wa.me/201062056341" target="_blank">💬 واتساب - دوله</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3>💬 التواصل المباشر</h3>
-    <a class="btn wa" href="https://wa.me/201062056341?text=%D8%A7%D9%84%D9%88%20%D9%8A%D8%A7%20%D8%AF%D9%88%D9%84%D9%87" target="_blank">💬 كلمني واتساب</a>
-    <a class="btn call" href="tel:+201062056341">📞 اتصل بيا</a>
-    <div class="phone-box">01062056341 📱</div>
-  </div>
-
-  <p class="footer">© 2026 DAWLA | دوله - جميع الحقوق محفوظة</p>
-</div>
-<script>
-function goLink(){
-  var s=document.getElementById('mySelect');
-  if(s.value==''){alert('اختار الأول يا بطل 👆');}
-  else{window.open(s.value,'_blank');}
-}
-function showAll(){
-  var d=document.getElementById('allLinks');
-  d.style.display = d.style.display=='block' ? 'none' : 'block';
-}
-</script>
-</body>
-</html>
+.stat b{display:block;font-size:16px}.stat span{font-size:12px;color:#aaa}
+.card{background:rgba(255,255,255,.08);backdrop-filter:blur(
