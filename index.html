@@ -3,167 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>D7OLA | دولا - Official Website</title>
-<meta name="description" content="الموقع الرسمي للمطرب دولا D7OLA - راب تراب مهرجانات">
+<title>D7OLA | دولا - كل لينكاتي</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Arial,sans-serif}
-html{scroll-behavior:smooth}
-body{background:#07070d;color:#fff;overflow-x:hidden}
-a{text-decoration:none;color:#fff}
-nav{position:fixed;top:0;right:0;left:0;z-index:100;background:rgba(0,0,0,.7);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid #222}
-nav b{font-size:26px;letter-spacing:3px;background:linear-gradient(90deg,#a855f7,#ec4899,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-nav .links{display:flex;gap:16px;font-size:14px}
-nav .links a{color:#ddd}
-.hero{min-height:100vh;background:radial-gradient(circle at 50% 20%,#3b0a6b 0%,#12001f 40%,#07070d 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 20px 60px;position:relative}
-.badge{background:#ffffff15;border:1px solid #a855f7;padding:8px 18px;border-radius:50px;font-size:13px;margin-bottom:18px}
-.logo{width:160px;height:160px;border-radius:50%;background:linear-gradient(45deg,#a855f7,#ec4899,#f59e0b,#22d3ee);display:flex;align-items:center;justify-content:center;font-size:70px;font-weight:900;box-shadow:0 0 60px #a855f7aa,0 0 100px #ec489933;animation:float 3s ease-in-out infinite}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-.hero h1{font-size:72px;letter-spacing:6px;margin-top:18px;background:linear-gradient(90deg,#fff,#a855f7,#ec4899,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero h2{font-size:22px;color:#f59e0b;margin-top:6px}
-.hero p{color:#ccc;max-width:600px;line-height:1.8;margin:16px 0 26px}
-.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-.btn{padding:14px 26px;border-radius:50px;font-weight:800;font-size:16px;display:inline-block}
-.btn-pink{background:linear-gradient(90deg,#ec4899,#a855f7);box-shadow:0 10px 30px #ec489955}
-.btn-white{background:#fff;color:#000}
-.btn-ghost{background:#ffffff10;border:1px solid #444}
-.stats{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:35px}
-.stat{background:#ffffff0d;border:1px solid #ffffff1a;border-radius:16px;padding:16px 22px;text-align:center;min-width:130px}
-.stat b{font-size:24px;display:block}
-.stat span{color:#aaa;font-size:13px}
-.marquee{background:linear-gradient(90deg,#a855f7,#ec4899,#f59e0b);padding:12px;white-space:nowrap;overflow:hidden;font-weight:800}
-.section{max-width:1000px;margin:auto;padding:60px 20px}
-.section h2{font-size:34px;text-align:center;margin-bottom:8px}
-.section .sub{text-align:center;color:#999;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.card{background:#13131f;border:1px solid #2a2a3a;border-radius:20px;padding:20px;transition:.3s}
-.card:hover{transform:translateY(-5px);border-color:#a855f7}
-.card .cover{height:150px;border-radius:14px;background:linear-gradient(135deg,#a855f7,#ec4899);display:flex;align-items:center;justify-content:center;font-size:50px;margin-bottom:14px}
-.card .cover.c2{background:linear-gradient(135deg,#f59e0b,#ef4444)}
-.card .cover.c3{background:linear-gradient(135deg,#22d3ee,#a855f7)}
-.card .cover.c4{background:linear-gradient(135deg,#10b981,#22d3ee)}
-.card h3{font-size:19px}
-.card p{color:#aaa;font-size:14px;margin:6px 0 14px;line-height:1.6}
-.row{display:flex;gap:10px;flex-wrap:wrap}
-.pill{background:#a855f7;padding:9px 16px;border-radius:50px;font-weight:700;font-size:14px}
-.pill.outline{background:transparent;border:1px solid #444}
-.player{background:linear-gradient(135deg,#1a0b2e,#2a0a2e);border:1px solid #a855f766;border-radius:22px;padding:24px;text-align:center}
-.player .big{font-size:55px}
-.player h3{font-size:26px;margin:10px 0 4px}
-.player p{color:#aaa}
-.controls{display:flex;gap:12px;justify-content:center;margin:20px 0}
-.controls button{width:55px;height:55px;border-radius:50%;border:none;font-size:20px;cursor:pointer;background:#fff;color:#000}
-.controls button.main{width:70px;height:70px;background:#ec4899;color:#fff;font-size:26px}
-.bar{height:8px;background:#ffffff22;border-radius:20px;overflow:hidden}
-.bar i{display:block;width:35%;height:100%;background:linear-gradient(90deg,#a855f7,#ec4899)}
-.times{display:flex;justify-content:space-between;color:#aaa;font-size:12px;margin-top:8px}
-.about{background:#13131f;border-radius:24px;padding:28px;text-align:center;line-height:2;color:#ddd;border:1px solid #2a2a3a}
-.about b{color:#f59e0b}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.gallery div{height:130px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:900}
-.g1{background:linear-gradient(135deg,#a855f7,#3b82f6)}
-.g2{background:linear-gradient(135deg,#ec4899,#f59e0b)}
-.g3{background:linear-gradient(135deg,#10b981,#22d3ee)}
-.g4{background:linear-gradient(135deg,#f59e0b,#ef4444)}
-.g5{background:linear-gradient(135deg,#8b5cf6,#ec4899)}
-.g6{background:linear-gradient(135deg,#22d3ee,#10b981)}
-.booking{background:linear-gradient(135deg,#a855f7,#ec4899);border-radius:24px;padding:30px;text-align:center}
-.booking h2{color:#fff}
-.booking p{margin:10px 0 20px}
-.booking a{background:#000;color:#fff;padding:14px 28px;border-radius:50px;font-weight:800;display:inline-block}
-.socials{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:25px}
-.socials a{background:#1c1c28;border:1px solid #333;padding:13px 20px;border-radius:50px;font-size:15px}
-footer{text-align:center;padding:35px 20px;color:#777;font-size:13px;line-height:1.8}
-@media(max-width:600px){.hero h1{font-size:52px}nav .links{display:none}.gallery{grid-template-columns:repeat(2,1fr)}}
-</style>
-</head>
-<body>
-
-<nav><b>D7OLA</b><div class="links"><a href="#songs">الأغاني</a><a href="#videos">الفيديوهات</a><a href="#about">عن دولا</a><a href="#booking">احجز</a></div><a href="https://www.youtube.com/@d7olaofficial" target="_blank" style="background:#ec4899;padding:9px 16px;border-radius:50px;font-size:13px;font-weight:800">اشترك ▶</a></nav>
-
-<div class="hero">
-<div class="badge">🔥 الموقع الرسمي - NEW 2026 🔥</div>
-<div class="logo">D</div>
-<h1>D7OLA</h1>
-<h2>دولا | راب • تراب • مهرجانات</h2>
-<p>أهلا بيك في عالمي. أنا دولا، بعمل مزيكا من القلب للشارع. اسمع، اتفرج، وتابع كل جديد قبل أي حد.</p>
-<div class="btns">
-<a class="btn btn-pink" href="#songs">🎵 اسمع أغانيي</a>
-<a class="btn btn-white" href="#videos">▶️ شوف الفيديوهات</a>
-<a class="btn btn-ghost" href="https://www.tiktok.com/@d7olaofficial" target="_blank">🎬 تيك توك</a>
-</div>
-<div class="stats">
-<div class="stat"><b>+50K</b><span>متابع</span></div>
-<div class="stat"><b>+20</b><span>أغنية</span></div>
-<div class="stat"><b>+1M</b><span>مشاهدة</span></div>
-<div class="stat"><b>2026</b><span>ألبوم جديد</span></div>
-</div>
-</div>
-
-<div class="marquee">🔥 D7OLA - دولا - أجدد أغاني 2026 - تابعني على كل المنصات - اللي جاي أقوى 🔥 D7OLA - دولا 🔥</div>
-
-<div class="section" id="songs">
-<h2>🎵 آخر الأغاني</h2>
-<p class="sub">دوس تشغيل واسمع على طول من يوتيوب</p>
-<div class="player">
-<div class="big">🎧</div>
-<h3>دولا - أجدد تراك</h3>
-<p>D7OLA - Latest Hit 2026</p>
-<div class="controls"><button>⏮</button><button class="main" onclick="window.open('https://www.youtube.com/@d7olaofficial','_blank')">▶</button><button>⏭</button></div>
-<div class="bar"><i></i></div>
-<div class="times"><span>01:12</span><span>03:24</span></div>
-</div>
-<br>
-<div class="grid">
-<div class="card"><div class="cover">🔥</div><h3>دولا - تراك رقم 1</h3><p>أقوى تراك نزل السنة دي، اسمعه وشاركه مع صحابك.</p><div class="row"><a class="pill" href="https://www.youtube.com/@d7olaofficial" target="_blank">تشغيل ▶</a><a class="pill outline" href="https://www.tiktok.com/@d7olaofficial" target="_blank">تيك توك</a></div></div>
-<div class="card"><div class="cover c2">💣</div><h3>دولا - تراك رقم 2</h3><p>راب تقيل وكلام من الشارع، هيعجبك أوي.</p><div class="row"><a class="pill" href="https://www.youtube.com/@d7olaofficial" target="_blank">تشغيل ▶</a><a class="pill outline" href="https://www.tiktok.com/@d7olaofficial" target="_blank">تيك توك</a></div></div>
-<div class="card"><div class="cover c3">👑</div><h3>دولا - تراك رقم 3</h3><p>تراب على مزاجك، للسهر والخروجات.</p><div class="row"><a class="pill" href="https://www.youtube.com/@d7olaofficial" target="_blank">تشغيل ▶</a><a class="pill outline" href="https://www.tiktok.com/@d7olaofficial" target="_blank">تيك توك</a></div></div>
-<div class="card"><div class="cover c4">🚀</div><h3>دولا - تراك رقم 4</h3><p>مهرجان جديد يكسر الدنيا.</p><div class="row"><a class="pill" href="https://www.youtube.com/@d7olaofficial" target="_blank">تشغيل ▶</a><a class="pill outline" href="https://www.tiktok.com/@d7olaofficial" target="_blank">تيك توك</a></div></div>
-<div class="card"><div class="cover">🎤</div><h3>دولا - تراك رقم 5</h3><p>أغنية حب وراب، مختلفة تماما.</p><div class="row"><a class="pill" href="https://www.youtube.com/@d7olaofficial" target="_blank">تشغيل ▶</a><a class="pill outline" href="https://www.tiktok.com/@d7olaofficial" target="_blank">تيك توك</a></div></div>
-<div class="card"><div class="cover c2">🌙</div><h3>دولا - تراك رقم 6</h3><p>تراك هادي للسهر، اسمعه بالليل.</p><div class="row"><a class="pill" href="https://www.youtube.com/@d7olaofficial" target="_blank">تشغيل ▶</a><a class="pill outline" href="https://www.tiktok.com/@d7olaofficial" target="_blank">تيك توك</a></div></div>
-</div>
-</div>
-
-<div class="section" id="videos">
-<h2>🎬 فيديوهات</h2>
-<p class="sub">كليبات وتيك توك وريلز</p>
-<div class="grid">
-<div class="card"><div class="cover c3">▶️</div><h3>كليب جديد - يوتيوب</h3><p>اتفرج على أجدد كليب على القناة الرسمية.</p><a class="pill" href="https://www.youtube.com/@d7olaofficial" target="_blank">اتفرج الآن</a></div>
-<div class="card"><div class="cover">📱</div><h3>تيك توك - ترند</h3><p>فيديوهات قصيرة وترندات كل يوم.</p><a class="pill" href="https://www.tiktok.com/@d7olaofficial" target="_blank">افتح تيك توك</a></div>
-<div class="card"><div class="cover c4">📸</div><h3>ريلز انستجرام</h3><p>صور وريلز وكواليس من الاستوديو.</p><a class="pill" href="https://www.instagram.com/d7olaofficial" target="_blank">افتح انستجرام</a></div>
-</div>
-</div>
-
-<div class="section">
-<h2>🖼️ صور</h2>
-<div class="gallery"><div class="g1">D7OLA</div><div class="g2">🔥</div><div class="g3">👑</div><div class="g4">🎤</div><div class="g5">💣</div><div class="g6">🚀</div></div>
-</div>
-
-<div class="section" id="about">
-<h2>👋 عن دولا</h2>
-<div class="about">
-أنا <b>دولا D7OLA</b>، مطرب من مصر 🇪🇬<br>
-بدأت من الشارع، وبعمل <b>راب وتراب ومهرجانات</b> بطريقتي الخاصة.<br>
-حلمي أوصل لكل بيت في مصر والوطن العربي.<br>
-تابعني على كل المنصات، واللي جاي أقوى بكتير 🔥
-<div class="socials">
-<a href="https://www.youtube.com/@d7olaofficial" target="_blank">▶️ يوتيوب</a>
-<a href="https://www.tiktok.com/@d7olaofficial" target="_blank">🎬 تيك توك</a>
-<a href="https://www.instagram.com/d7olaofficial" target="_blank">📸 انستجرام</a>
-<a href="https://www.facebook.com/d7olaofficial" target="_blank">👍 فيسبوك</a>
-<a href="https://open.spotify.com" target="_blank">🎧 سبوتيفاي</a>
-</div>
-</div>
-</div>
-
-<div class="section" id="booking">
-<div class="booking">
-<h2>🎤 احجز دولا لحفلتك</h2>
-<p>أفراح - حفلات - افتتاحات - مناسبات - كافيهات</p>
-<a href="https://www.instagram.com/d7olaofficial" target="_blank">احجز دلوقتي - ابعت رسالة 📩</a>
-</div>
-</div>
-
-<footer>© 2026 D7OLA - دولا | All Rights Reserved<br>الموقع الرسمي | تابعني على كل المنصات 🔥<br>Made with ❤️ in Egypt</footer>
-
-</body>
-                                                 </html>
+body{background:#07070d;color:#fff;min-height:100vh;display:flex;justify-content:center;padding:20px}
+.box{width:100%;max-width:480px;text-align:center;padding-top:25px}
+.logo{width:130px;height:130px;margin:auto;border-radius:50%;background:linear-gradient(45deg,#a855f7,#ec4899,#f59e0b);display:flex;align-items:center;justify-content:center;font-size:60px;font-weight:900;box-shadow:0 0 50px #a855f766}
+h1{font-size:44px;letter-spacing:4px;margin:16px 0 4px}
+p{color:#aaa;margin-bottom:6px}
+.bio{color:#ddd;line-height:1.7;margin:12px 0 20px}
+.contact{background:#16161f;border:1px solid #a855f766;border-radius:18px;padding:18px;margin-bottom:20px}
+.contact b{font-size:20px;display:block;margin-bottom:4px}
+.contact span{color:#f59e0b;font-size:22px;font-weight:900;letter-spacing:1px}
+.contact small{color:#aaa}
+a.link{display:flex;align-items:center;justify-content:center;gap:10px;color:#fff;text-decoration:none;padding:17
