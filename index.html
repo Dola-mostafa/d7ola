@@ -3,42 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adel Hub</title>
+<title>Dola عادل | Adel Hub</title>
 <style>
-body{margin:0;background:#05060f;color:#fff;font-family:sans-serif;padding:14px;text-align:center}
+:root{--bg:#05060f;--card:#111827;--main:#ff2d55;--main2:#7c3aed;--text:#fff}
+body{margin:0;background:var(--bg);color:var(--text);font-family:sans-serif;padding:14px;text-align:center;transition:.3s}
 .box{max-width:480px;margin:auto}
-.logo{width:80px;height:80px;background:linear-gradient(135deg,#ff2d55,#7c3aed);border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:900;margin:auto}
-h1{font-size:30px;margin:10px 0 2px} h1 span{color:#00d2ff}
-p{color:#999;font-size:13px}
-input{width:100%;padding:13px;border-radius:14px;border:1px solid #333;background:#111827;color:#fff;margin:14px 0}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.themeBtn,.langBtn{background:var(--card);border:1px solid #333;color:var(--text);padding:10px 14px;border-radius:30px;font-weight:900;cursor:pointer;font-size:14px}
+.live{font-size:12px;background:#00ff8822;border:1px solid #00ff88;color:#00ff88;padding:6px 12px;border-radius:30px}
+.dolaTop{background:linear-gradient(90deg,var(--main),var(--main2));padding:16px 12px;border-radius:20px;margin:14px 0 6px}
+.dolaTop h1{font-size:34px;margin:0;font-weight:900}
+.dolaTop p{color:#fff;font-size:14px;margin:4px 0 0;opacity:.9}
+.logo{width:80px;height:80px;background:linear-gradient(135deg,var(--main),var(--main2));border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:900;margin:14px auto 6px}
+h2{font-size:26px;margin:0} h2 span{color:var(--main)}
+.sub{color:#999;font-size:13px}
+input{width:100%;padding:14px;border-radius:16px;border:1px solid #333;background:var(--card);color:var(--text);margin:14px 0}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-a{display:block;background:#111827;border:1px solid #222;padding:16px 8px;border-radius:18px;color:#fff;text-decoration:none}
+a{display:block;background:var(--card);border:1px solid #222;padding:16px 8px;border-radius:20px;color:var(--text);text-decoration:none}
 a b{display:block;margin-top:6px} a span{color:#999;font-size:11px}
-.big{grid-column:span 2;text-align:right;display:flex;gap:12px;align-items:center}
+.big{grid-column:span 2;text-align:right;display:flex;gap:12px;align-items:center;color:#fff}
 .fire{background:linear-gradient(135deg,#ff2d55,#ff6b00)}
 .dream{background:linear-gradient(135deg,#7c3aed,#00d2ff)}
-.game{background:#000;border:1px solid #ff2d55;padding:14px;border-radius:18px;margin-top:12px}
-button{background:#ff2d55;color:#fff;border:0;padding:13px;width:100%;border-radius:12px;font-size:17px;font-weight:900}
-.contact{background:#111827;padding:14px;border-radius:18px;margin-top:12px}
-.contact span{color:#00d2ff;font-size:20px;font-weight:900;direction:ltr;display:block}
+.game{background:#000;border:1px solid var(--main);padding:14px;border-radius:20px;margin-top:12px}
+button{cursor:pointer}
+.shootBtn{background:linear-gradient(90deg,var(--main),var(--main2));color:#fff;border:0;padding:14px;width:100%;border-radius:14px;font-size:18px;font-weight:900}
+.contact{background:var(--card);border:1px solid var(--main);padding:16px;border-radius:20px;margin-top:12px}
+.contact span{color:var(--main);font-size:24px;font-weight:900;direction:ltr;display:block}
+.copyBtn{background:var(--main);color:#fff;border:0;padding:10px 20px;border-radius:12px;font-weight:900;margin-top:8px}
 </style>
 </head>
 <body>
 <div class="box">
-<div class="logo">A</div>
-<h1>Adel <span>HUB</span></h1>
-<p>اختار أي حاجة وهتفتح معاك على طول 🚀</p>
-<input id="s" oninput="f()" placeholder="🔍 دور هنا... مثلا تيك توك">
-<div class="grid" id="g">
-<a class="big fire" href="https://ff.garena.com" target="_blank"><div style="font-size:36px">🔥</div><div><b>FREE FIRE</b><br><span>العب فري فاير دلوقتي</span></div></a>
-<a class="big dream" href="https://play.google.com/store/apps/details?id=com.TenebryFox.DreamRoadMultiplayer" target="_blank"><div style="font-size:36px">🚗</div><div><b>DREAM ROAD</b><br><span>سباق وعربيات مع صحابك</span></div></a>
-<a data-n="chatgpt شات" href="https://chatgpt.com" target="_blank"><div style="font-size:30px">🤖</div><b>ChatGPT</b><span>ذكاء اصطناعي</span></a>
-<a data-n="instagram انستجرام" href="https://instagram.com" target="_blank"><div style="font-size:30px">📸</div><b>Instagram</b><span>انستجرام</span></a>
-<a data-n="telegram تليجرام" href="https://web.telegram.org" target="_blank"><div style="font-size:30px">✈️</div><b>Telegram</b><span>تليجرام</span></a>
-<a data-n="youtube يوتيوب" href="https://youtube.com" target="_blank"><div style="font-size:30px">▶️</div><b>YouTube</b><span>يوتيوب</span></a>
-<a data-n="tiktok تيك توك" href="https://www.tiktok.com" target="_blank"><div style="font-size:30px">🎵</div><b>TikTok</b><span>تيك توك</span></a>
-<a data-n="whatsapp واتساب" href="https://web.whatsapp.com" target="_blank"><div style="font-size:30px">💬</div><b>WhatsApp</b><span>واتساب</span></a>
-<a data-n="google جوجل" href="https://google.com" target="_blank"><div style="font-size:30px">🔍</div><b>Google</b><span>بحث جوجل</span></a>
-<a data-n="maps خرائط" href="https://maps.google.com" target="_blank"><div style="font-size:30px">🗺️</div><b>Maps</b><span>خرائط</span></a>
+<div class="top">
+<button class="themeBtn" onclick="changeTheme()">🎨 <span id="t-theme">غير اللون</span></button>
+<button class="langBtn" onclick="toggleLang()">🌐 <span id="t-langBtn">EN</span></button>
+<span class="live">● <span id="t-online">أونلاين</span></span>
 </div>
-<div class="game
+
+<div class="dolaTop">
+<h1 id="t-dola">👑 Dola عادل</h1>
+<p id="t-dolaSub">الموقع الرسمي | Adel Hub 🚀</p>
+</div>
+
+<div class="logo">A</div>
+<h2>Adel <span>HUB</span></h2>
+<p class="sub" id="t-sub">اختار أي حاجة وهتفتح معاك على طول 🚀</p>
+<input id="s" oninput="f()" placeholder="🔍 دور هنا... مثلا تيك توك">
+
+<div class="grid" id="g">
+<a class="big fire" href="https://ff.garena.com" target="_blank"><div style="font-size:36px">🔥</div><div><b>FREE FIRE</b><br><span id="t-fire">العب فري فاير دلوقتي</span></div></a>
+<a class="big dream" href="https://play.google.com/store/apps/details?id=com.TenebryFox.DreamRoadMultiplayer" target="_blank"><div style="font-size:36px">🚗</div><div><b>DREAM ROAD</b><br><span id="t-dream">سباق وعربيات مع صحابك</span></div></a>
+<a data-n="chatgpt شات chatgpt" href="https://chatgpt.com" target="_blank"><div style="font-size:30px">🤖</div><b>ChatGPT</b><span id="t-chat">ذكاء اصطناعي</span></a>
+<a data-n="instagram انستجرام instagram" href="https://instagram.com" target="_blank"><div style="font-size:30px">📸</div><b>Instagram</b><span id="t-insta">انستجرام</span></a>
+<a data-n="telegram تليجرام telegram" href="https://web.telegram.org" target="_blank"><div style="font-size:30px">✈️</div><b>Telegram</b><span id="t-tele">تليجرام</span></a>
+<a data-n="youtube يوتيوب youtube" href="https://youtube.com" target="_blank"><div style="font-size:30px">▶️</div><b>YouTube</b><span id="t-yt">يوتيوب</span></a>
+<a data-n="tiktok تيك توك tiktok" href="https://www.tiktok.com" target="_blank"><div style="font-size:30px">🎵</div><b>TikTok</b><span id="t-tiktok">تيك توك</span></a>
+<a data-n="whatsapp واتساب whatsapp" href="https://web.whatsapp.com" target="_blank"><div style="font-size:30px">💬</div><b>WhatsApp</b><span id="t-wa">واتساب</span></a>
+<a data-n="google جوجل google" href="https://google.com" target="_blank"><div style="font-size:30px">🔍</div><b>Google</b><span id="t-google">بحث جوجل</span></a>
+<a data-n="maps خرائط maps" href="https://maps.google.com" target="_blank"><div style="font-size:30px">🗺️</div><b>Maps</b><span id="t-maps">خرائط
