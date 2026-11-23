@@ -12,4 +12,134 @@ body{margin:0;background:radial-gradient(600px 300px at 20% 0%,#7c3aed55,transpa
 .top{position:sticky;top:10px;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;background:rgba(0,0,0,.45);backdrop-filter:blur(15px);padding:8px;border-radius:50px;border:1px solid rgba(255,255,255,.15)}
 .top button{background:#fff;color:#000;border:0;padding:9px 14px;border-radius:50px;font-weight:900;cursor:pointer;font-size:13px}
 .live{font-size:12px;color:#00ff88;font-weight:900}
-/*
+/* الاسم بالخط في النص */
+.nameBox{background:linear-gradient(135deg,var(--main),var(--main2),#00d2ff);padding:2px;border-radius:28px;margin:16px 0}
+.nameInner{background:#0b0b18;padding:20px 12px;border-radius:26px}
+.avatar{width:90px;height:90px;margin:auto;background:linear-gradient(135deg,var(--main),#00d2ff);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:900;border:3px solid #fff;box-shadow:0 0 25px var(--main)}
+.nameRow{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px 0 4px}
+.nameRow h1{font-size:36px;margin:0;font-weight:900}
+.nameRow h1 span{color:#00d2ff}
+.divider{width:2px;height:42px;background:linear-gradient(var(--main),#00d2ff);border-radius:10px;box-shadow:0 0 10px #00d2ff}
+.nameSub{color:#bbb;font-size:13px;margin:0}
+.badges{display:flex;gap:6px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.badges span{background:#ffffff14;border:1px solid #ffffff22;padding:5px 10px;border-radius:20px;font-size:11px}
+.searchBox{display:flex;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:6px;border-radius:50px;margin:14px 0}
+.searchBox input{flex:1;background:transparent;border:0;outline:0;color:var(--text);padding:10px;font-size:15px}
+.searchBox button{background:linear-gradient(90deg,var(--main),var(--main2));color:#fff;border:0;padding:10px 18px;border-radius:50px;font-weight:900}
+.secTitle{text-align:right;font-size:17px;font-weight:900;margin:16px 4px 8px}
+.secTitle span{color:var(--main)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:16px 8px;border-radius:22px;color:var(--text);text-decoration:none}
+.card b{display:block;margin-top:6px} .card span{color:#bbb;font-size:11px}
+.big{grid-column:span 2;display:flex;gap:12px;align-items:center;text-align:right;color:#fff;padding:14px}
+.fire{background:linear-gradient(135deg,#ff2d55,#ff6b00)}
+.dream{background:linear-gradient(135deg,#7c3aed,#00d2ff)}
+.game{background:#111;border:1px solid var(--main);padding:16px;border-radius:24px;margin-top:8px}
+.shootBtn{background:linear-gradient(90deg,var(--main),var(--main2));color:#fff;border:0;padding:14px;width:100%;border-radius:50px;font-size:18px;font-weight:900;cursor:pointer}
+/* التواصل في الاخر */
+.contact{background:rgba(255,255,255,.07);border:1px solid var(--main);padding:20px;border-radius:28px;margin-top:16px}
+.contact .num{color:#fff;background:linear-gradient(90deg,var(--main),var(--main2));padding:12px;border-radius:50px;font-size:26px;font-weight:900;direction:ltr;margin:12px 0;display:block;letter-spacing:2px}
+.copyBtn{background:#fff;color:#000;border:0;padding:11px 22px;border-radius:50px;font-weight:900;cursor:pointer}
+.socialRow{display:flex;gap:10px;margin-top:12px}
+.socialRow a{flex:1;padding:14px;border-radius:50px;font-weight:900;font-size:15px;text-decoration:none}
+.waBtn{background:#25D366!important;color:#fff!important}
+.callBtn{background:#fff!important;color:#000!important}
+.igBtn{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af)!important;color:#fff!important}
+.bottomNav{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);width:calc(100% - 28px);max-width:480px;background:rgba(0,0,0,.7);backdrop-filter:blur(15px);border:1px solid rgba(255,255,255,.2);display:flex;justify-content:space-around;padding:10px;border-radius:50px;z-index:20}
+.bottomNav a{color:#fff;text-decoration:none;font-size:12px}
+.bottomNav a b{display:block;font-size:18px}
+</style>
+</head>
+<body>
+<div class="box">
+
+<div class="top">
+<button onclick="changeTheme()">🎨 <span id="t-theme">غير اللون</span></button>
+<button onclick="toggleLang()">🌐 <span id="t-langBtn">EN</span></button>
+<span class="live">● <span id="t-online">أونلاين</span></span>
+</div>
+
+<div class="nameBox"><div class="nameInner">
+<div class="avatar">A</div>
+
+<!-- عادل | دولا والخط في النص -->
+<div class="nameRow">
+<h1 id="t-name1">عادل</h1>
+<div class="divider"></div>
+<h1><span id="t-name2">دولا</span></h1>
+</div>
+
+<p class="nameSub" id="t-dolaSub">الموقع الرسمي | Adel Hub 🚀</p>
+<div class="badges"><span>⭐ VIP</span><span>🔥 الأكثر زيارة</span><span>✅ موثق</span></div>
+</div></div>
+
+<div class="searchBox"><input id="s" oninput="f()" placeholder="🔍 دور هنا... مثلا تيك توك"><button onclick="f()">بحث</button></div>
+
+<div class="secTitle">🔥 <span id="t-gamesTitle">ألعابك المفضلة</span></div>
+<div class="grid" id="g">
+<a class="card big fire" href="https://ff.garena.com" target="_blank"><div style="font-size:38px">🔥</div><div><b>FREE FIRE</b><br><span id="t-fire">العب فري فاير دلوقتي</span></div></a>
+<a class="card big dream" href="https://play.google.com/store/apps/details?id=com.TenebryFox.DreamRoadMultiplayer" target="_blank"><div style="font-size:38px">🚗</div><div><b>DREAM ROAD</b><br><span id="t-dream">سباق وعربيات مع صحابك</span></div></a>
+<a class="card" data-n="chatgpt شات chatgpt" href="https://chatgpt.com" target="_blank"><div style="font-size:30px">🤖</div><b>ChatGPT</b><span id="t-chat">ذكاء اصطناعي</span></a>
+<a class="card" data-n="instagram انستجرام instagram" href="https://instagram.com" target="_blank"><div style="font-size:30px">📸</div><b>Instagram</b><span id="t-insta">انستجرام</span></a>
+<a class="card" data-n="telegram تليجرام telegram" href="https://web.telegram.org" target="_blank"><div style="font-size:30px">✈️</div><b>Telegram</b><span id="t-tele">تليجرام</span></a>
+<a class="card" data-n="youtube يوتيوب youtube" href="https://youtube.com" target="_blank"><div style="font-size:30px">▶️</div><b>YouTube</b><span id="t-yt">يوتيوب</span></a>
+<a class="card" data-n="tiktok تيك توك tiktok" href="https://www.tiktok.com" target="_blank"><div style="font-size:30px">🎵</div><b>TikTok</b><span id="t-tiktok">تيك توك</span></a>
+<a class="card" data-n="whatsapp واتساب whatsapp" href="https://web.whatsapp.com" target="_blank"><div style="font-size:30px">💬</div><b>WhatsApp</b><span id="t-wa">واتساب</span></a>
+<a class="card" data-n="google جوجل google" href="https://google.com" target="_blank"><div style="font-size:30px">🔍</div><b>Google</b><span id="t-google">بحث جوجل</span></a>
+<a class="card" data-n="maps خرائط maps" href="https://maps.google.com" target="_blank"><div style="font-size:30px">🗺️</div><b>Maps</b><span id="t-maps">خرائط</span></a>
+</div>
+
+<div class="secTitle">🎮 <span id="t-gameTitle2">العب واكسب</span></div>
+<div class="game"><h3 id="t-game">🎯 لعبة التصويب</h3><h2><span id="t-score">النقط</span>: <span id="score">0</span></h2><button class="shootBtn" onclick="points+=10;document.getElementById('score').textContent=points"><span id="t-shoot">🔫 اضرب !</span></button></div>
+
+<!-- التواصل في الاخر -->
+<div class="contact" id="contactBox">
+<b style="font-size:19px" id="t-contact">📞 للتواصل معنا</b>
+<b style="margin-top:8px" id="t-contactName">عادل | دولا</b>
+<span class="num">01062056341</span>
+<button class="copyBtn" onclick="copyNum()"><span id="t-copy">نسخ الرقم 📋</span></button>
+<div class="socialRow">
+<a class="waBtn" href="https://wa.me/201062056341" target="_blank">💬 <span id="t-waBtn">واتساب</span></a>
+<a class="callBtn" href="tel:01062056341">📞 <span id="t-callBtn">اتصال</span></a>
+</div>
+<div class="socialRow">
+<a class="igBtn" href="https://instagram.com" target="_blank">📸 <span id="t-igBtn">انستجرام</span></a>
+</div>
+<p style="font-size:12px;color:#bbb;margin:10px 0 0" id="t-contactNote">كلمنا واتساب أو اتصل بينا على نفس الرقم 📱</p>
+</div>
+
+<p style="color:#888;font-size:12px" id="t-footer">صُنع بحب ❤️ بواسطة عادل | دولا | 2026</p>
+</div>
+
+<div class="bottomNav">
+<a href="#"><b>🏠</b><span id="t-navHome">الرئيسية</span></a>
+<a href="#g"><b>🎮</b><span id="t-navGames">ألعاب</span></a>
+<a href="#contactBox"><b>📞</b><span id="t-navContact">تواصل</span></a>
+<a href="https://wa.me/201062056341" target="_blank"><b>💬</b><span id="t-navWa">واتساب</span></a>
+</div>
+
+<script>
+var points=0;
+var lang='ar';
+var AR={theme:'غير اللون',langBtn:'EN',online:'أونلاين',name1:'عادل',name2:'دولا',dolaSub:'الموقع الرسمي | Adel Hub 🚀',gamesTitle:'ألعابك المفضلة',gameTitle2:'العب واكسب',search:'🔍 دور هنا... مثلا تيك توك',fire:'العب فري فاير دلوقتي',dream:'سباق وعربيات مع صحابك',chat:'ذكاء اصطناعي',insta:'انستجرام',tele:'تليجرام',yt:'يوتيوب',tiktok:'تيك توك',wa:'واتساب',google:'بحث جوجل',maps:'خرائط',game:'🎯 لعبة التصويب',score:'النقط',shoot:'🔫 اضرب !',contact:'📞 للتواصل معنا',contactName:'عادل | دولا',copy:'نسخ الرقم 📋',waBtn:'واتساب',callBtn:'اتصال',igBtn:'انستجرام',contactNote:'كلمنا واتساب أو اتصل بينا على نفس الرقم 📱',footer:'صُنع بحب ❤️ بواسطة عادل | دولا | 2026',navHome:'الرئيسية',navGames:'ألعاب',navContact:'تواصل',navWa:'واتساب'};
+var EN={theme:'Change Color',langBtn:'عربي',online:'Online',name1:'Adel',name2:'Dola',dolaSub:'Official Website | Adel Hub 🚀',gamesTitle:'Your Fav Games',gameTitle2:'Play & Win',search:'🔍 Search here... e.g TikTok',fire:'Play Free Fire Now',dream:'Racing & cars with friends',chat:'AI Chat',insta:'Instagram',tele:'Telegram',yt:'YouTube',tiktok:'TikTok',wa:'WhatsApp',google:'Google Search',maps:'Maps',game:'🎯 Shooting Game',score:'Score',shoot:'🔫 Shoot !',contact:'📞 Contact Us',contactName:'Adel | Dola',copy:'Copy Number 📋',waBtn:'WhatsApp',callBtn:'Call',igBtn:'Instagram',contactNote:'Contact us on WhatsApp or Call on same number 📱',footer:'Made with love ❤️ by Adel | Dola | 2026',navHome:'Home',navGames:'Games',navContact:'Contact',navWa:'WhatsApp'};
+function toggleLang(){
+lang=(lang==='ar'?'en':'ar');var d=(lang==='ar'?AR:EN);
+document.documentElement.lang=lang;document.documentElement.dir=(lang==='ar'?'rtl':'ltr');
+for(var k in d){var el=document.getElementById('t-'+k);if(el) el.textContent=d[k];}
+document.getElementById('s').placeholder=d.search;
+}
+var themes=[
+{bg:'#05060f',main:'#ff2d55',main2:'#7c3aed'},
+{bg:'#f8fafc',main:'#2563eb',main2:'#00d2ff'},
+{bg:'#000000',main:'#00ff88',main2:'#00d2ff'},
+{bg:'#1a0b2e',main:'#ffcc00',main2:'#ff6b00'},
+{bg:'#fff7ed',main:'#f97316',main2:'#ec4899'}
+];
+var ti=0;
+function changeTheme(){ti=(ti+1)%themes.length;var t=themes[ti];var r=document.documentElement.style;r.setProperty('--bg',t.bg);r.setProperty('--main',t.main);r.setProperty('--main2',t.main2);}
+function f(){var q=document.getElementById('s').value.toLowerCase();document.querySelectorAll('#g a').forEach(a=>{var n=(a.getAttribute('data-n')||a.textContent).toLowerCase();a.style.display=n.includes(q)?'':'none';});}
+function copyNum(){navigator.clipboard.writeText('01062056341');alert(lang==='ar'?'تم نسخ الرقم ✅ 01062056341':'Copied number ✅ 01062056341');}
+</script>
+</body>
+  </html>
