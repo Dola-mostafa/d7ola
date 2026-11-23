@@ -3,20 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adel | Hub</title>
+<title>Adel Hub</title>
 <style>
-*{box-sizing:border-box;font-family:sans-serif}
-body{margin:0;background:#05060f;color:#fff;padding:14px;background-image:radial-gradient(circle at 10% 10%,#ff2d5544,transparent 40%),radial-gradient(circle at 90% 10%,#00d2ff44,transparent 40%)}
-.box{max-width:520px;margin:auto}
-.header{text-align:center;padding:18px 0 10px}
-.logo{width:90px;height:90px;background:linear-gradient(135deg,#ff2d55,#7c3aed);border-radius:28px;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:900;margin:auto;box-shadow:0 10px 30px #ff2d5555;transform:rotate(-3deg)}
-h1{font-size:32px;margin:12px 0 4px}
-h1 span{color:#00d2ff}
-.sub{color:#9ca3af;font-size:13px}
-.search{width:100%;background:#111827;border:1px solid #333;padding:14px;border-radius:16px;color:#fff;font-size:15px;margin:16px 0;outline:none}
-.search:focus{border-color:#00d2ff}
-.tabs{display:flex;gap:8px;margin-bottom:14px}
-.tab{flex:1;background:#111827;border:1px solid #222;padding:10px;border-radius:14px;color:#fff;font-size:13px;font-weight:800}
-.tab.active{background:#fff;color:#000}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.app{background:#111827;border:1px solid #222;padding:16px 10px;border-radius:20px;text
+body{margin:0;background:#05060f;color:#fff;font-family:sans-serif;padding:14px;text-align:center}
+.box{max-width:480px;margin:auto}
+.logo{width:80px;height:80px;background:linear-gradient(135deg,#ff2d55,#7c3aed);border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:900;margin:auto}
+h1{font-size:30px;margin:10px 0 2px} h1 span{color:#00d2ff}
+p{color:#999;font-size:13px}
+input{width:100%;padding:13px;border-radius:14px;border:1px solid #333;background:#111827;color:#fff;margin:14px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+a{display:block;background:#111827;border:1px solid #222;padding:16px 8px;border-radius:18px;color:#fff;text-decoration:none}
+a b{display:block;margin-top:6px} a span{color:#999;font-size:11px}
+.big{grid-column:span 2;text-align:right;display:flex;gap:12px;align-items:center}
+.fire{background:linear-gradient(135deg,#ff2d55,#ff6b00)}
+.dream{background:linear-gradient(135deg,#7c3aed,#00d2ff)}
+.game{background:#000;border:1px solid #ff2d55;padding:14px;border-radius:18px;margin-top:12px}
+button{background:#ff2d55;color:#fff;border:0;padding:13px;width:100%;border-radius:12px;font-size:17px;font-weight:900}
+.contact{background:#111827;padding:14px;border-radius:18px;margin-top:12px}
+.contact span{color:#00d2ff;font-size:20px;font-weight:900;direction:ltr;display:block}
+</style>
+</head>
+<body>
+<div class="box">
+<div class="logo">A</div>
+<h1>Adel <span>HUB</span></h1>
+<p>اختار أي حاجة وهتفتح معاك على طول 🚀</p>
+<input id="s" oninput="f()" placeholder="🔍 دور هنا... مثلا تيك توك">
+<div class="grid" id="g">
+<a class="big fire" href="https://ff.garena.com" target="_blank"><div style="font-size:36px">🔥</div><div><b>FREE FIRE</b><br><span>العب فري فاير دلوقتي</span></div></a>
+<a class="big dream" href="https://play.google.com/store/apps/details?id=com.TenebryFox.DreamRoadMultiplayer" target="_blank"><div style="font-size:36px">🚗</div><div><b>DREAM ROAD</b><br><span>سباق وعربيات مع صحابك</span></div></a>
+<a data-n="chatgpt شات" href="https://chatgpt.com" target="_blank"><div style="font-size:30px">🤖</div><b>ChatGPT</b><span>ذكاء اصطناعي</span></a>
+<a data-n="instagram انستجرام" href="https://instagram.com" target="_blank"><div style="font-size:30px">📸</div><b>Instagram</b><span>انستجرام</span></a>
+<a data-n="telegram تليجرام" href="https://web.telegram.org" target="_blank"><div style="font-size:30px">✈️</div><b>Telegram</b><span>تليجرام</span></a>
+<a data-n="youtube يوتيوب" href="https://youtube.com" target="_blank"><div style="font-size:30px">▶️</div><b>YouTube</b><span>يوتيوب</span></a>
+<a data-n="tiktok تيك توك" href="https://www.tiktok.com" target="_blank"><div style="font-size:30px">🎵</div><b>TikTok</b><span>تيك توك</span></a>
+<a data-n="whatsapp واتساب" href="https://web.whatsapp.com" target="_blank"><div style="font-size:30px">💬</div><b>WhatsApp</b><span>واتساب</span></a>
+<a data-n="google جوجل" href="https://google.com" target="_blank"><div style="font-size:30px">🔍</div><b>Google</b><span>بحث جوجل</span></a>
+<a data-n="maps خرائط" href="https://maps.google.com" target="_blank"><div style="font-size:30px">🗺️</div><b>Maps</b><span>خرائط</span></a>
+</div>
+<div class="game
