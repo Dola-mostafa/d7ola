@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dola | دولا - الموقع الرسمي</title>
+<meta name="description" content="موقع دولا الرسمي - واجهة زجاجية شفافة عصرية">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Cairo',sans-serif;
+  -webkit-tap-highlight-color:transparent;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  background:linear-gradient(135deg,#4c1d95 0%,#6d28d9 20%,#2563eb 50%,#06b6d4 80%,#7c3aed 100%);
+  background-size:400% 400%;
+  animation:bgMove 15s ease infinite;
+  background-attachment:fixed;
+  color:#ffffff;
+  min-height:100vh;
+  padding:18px 14px 30px 14px;
+  overflow-x:hidden;
+}
+@keyframes bgMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+.bubble{
+  position:fixed;
+  border-radius:50%;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,0.30);
+  z-index:0;
+  pointer-events:none;
+  animation:floatBubble 9s ease-in-out infinite;
+}
+.bubble1{width:150px;height:150px;top:8%;left:4%}
+.bubble
