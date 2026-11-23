@@ -3,90 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dola عادل | Adel Hub</title>
+<title>عادل | دولا</title>
 <style>
-:root{--bg:#05060f;--card:#111827;--main:#ff2d55;--main2:#7c3aed;--text:#fff}
+:root{--bg:#05060f;--main:#ff2d55;--main2:#7c3aed;--text:#fff}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:sans-serif;padding:14px;text-align:center;transition:.3s}
+body{margin:0;background:radial-gradient(600px 300px at 20% 0%,#7c3aed55,transparent),radial-gradient(600px 300px at 90% 20%,#ff2d5555,transparent),var(--bg);color:var(--text);font-family:sans-serif;padding:14px 14px 90px;text-align:center}
 .box{max-width:480px;margin:auto}
-.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.themeBtn,.langBtn{background:var(--card);border:1px solid #333;color:var(--text);padding:10px 14px;border-radius:30px;font-weight:900;cursor:pointer;font-size:14px}
-.live{font-size:12px;background:#00ff8822;border:1px solid #00ff88;color:#00ff88;padding:6px 12px;border-radius:30px}
-.dolaTop{background:linear-gradient(90deg,var(--main),var(--main2));padding:18px 12px;border-radius:22px;margin:14px 0 6px;box-shadow:0 10px 30px #0005}
-.dolaTop h1{font-size:34px;margin:0;font-weight:900}
-.dolaTop p{color:#fff;font-size:14px;margin:4px 0 0;opacity:.9}
-.logo{width:80px;height:80px;background:linear-gradient(135deg,var(--main),var(--main2));border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:900;margin:14px auto 6px}
-h2{font-size:26px;margin:0} h2 span{color:var(--main)}
-.sub{color:#999;font-size:13px}
-input{width:100%;padding:14px;border-radius:16px;border:1px solid #333;background:var(--card);color:var(--text);margin:14px 0;font-size:15px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-a{display:block;background:var(--card);border:1px solid #222;padding:16px 8px;border-radius:20px;color:var(--text);text-decoration:none}
-a b{display:block;margin-top:6px} a span{color:#999;font-size:11px}
-.big{grid-column:span 2;text-align:right;display:flex;gap:12px;align-items:center;color:#fff}
-.fire{background:linear-gradient(135deg,#ff2d55,#ff6b00)}
-.dream{background:linear-gradient(135deg,#7c3aed,#00d2ff)}
-.game{background:#000;border:1px solid var(--main);padding:14px;border-radius:20px;margin-top:12px}
-button{cursor:pointer}
-.shootBtn{background:linear-gradient(90deg,var(--main),var(--main2));color:#fff;border:0;padding:14px;width:100%;border-radius:14px;font-size:18px;font-weight:900}
-.contact{background:var(--card);border:1px solid var(--main);padding:18px;border-radius:22px;margin-top:12px}
-.contact span{color:var(--main);font-size:26px;font-weight:900;direction:ltr;display:block;margin:6px 0}
-.copyBtn{background:var(--main);color:#fff;border:0;padding:11px 22px;border-radius:12px;font-weight:900;margin-top:4px}
-.socialRow{display:flex;gap:10px;margin-top:12px}
-.socialRow a{flex:1;padding:13px;border-radius:14px;font-weight:900;font-size:15px}
-.waBtn{background:#25D366!important;color:#fff!important;border:none!important}
-.igBtn{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af)!important;color:#fff!important;border:none!important}
-</style>
-</head>
-<body>
-<div class="box">
-
-<div class="top">
-<button class="themeBtn" onclick="changeTheme()">🎨 <span id="t-theme">غير اللون</span></button>
-<button class="langBtn" onclick="toggleLang()">🌐 <span id="t-langBtn">EN</span></button>
-<span class="live">● <span id="t-online">أونلاين</span></span>
-</div>
-
-<div class="dolaTop">
-<h1 id="t-dola">👑 Dola عادل</h1>
-<p id="t-dolaSub">الموقع الرسمي | Adel Hub 🚀</p>
-</div>
-
-<div class="logo">A</div>
-<h2>Adel <span>HUB</span></h2>
-<p class="sub" id="t-sub">اختار أي حاجة وهتفتح معاك على طول 🚀</p>
-<input id="s" oninput="f()" placeholder="🔍 دور هنا... مثلا تيك توك">
-
-<div class="grid" id="g">
-<a class="big fire" href="https://ff.garena.com" target="_blank"><div style="font-size:36px">🔥</div><div><b>FREE FIRE</b><br><span id="t-fire">العب فري فاير دلوقتي</span></div></a>
-<a class="big dream" href="https://play.google.com/store/apps/details?id=com.TenebryFox.DreamRoadMultiplayer" target="_blank"><div style="font-size:36px">🚗</div><div><b>DREAM ROAD</b><br><span id="t-dream">سباق وعربيات مع صحابك</span></div></a>
-<a data-n="chatgpt شات chatgpt" href="https://chatgpt.com" target="_blank"><div style="font-size:30px">🤖</div><b>ChatGPT</b><span id="t-chat">ذكاء اصطناعي</span></a>
-<a data-n="instagram انستجرام instagram" href="https://instagram.com" target="_blank"><div style="font-size:30px">📸</div><b>Instagram</b><span id="t-insta">انستجرام</span></a>
-<a data-n="telegram تليجرام telegram" href="https://web.telegram.org" target="_blank"><div style="font-size:30px">✈️</div><b>Telegram</b><span id="t-tele">تليجرام</span></a>
-<a data-n="youtube يوتيوب youtube" href="https://youtube.com" target="_blank"><div style="font-size:30px">▶️</div><b>YouTube</b><span id="t-yt">يوتيوب</span></a>
-<a data-n="tiktok تيك توك tiktok" href="https://www.tiktok.com" target="_blank"><div style="font-size:30px">🎵</div><b>TikTok</b><span id="t-tiktok">تيك توك</span></a>
-<a data-n="whatsapp واتساب whatsapp" href="https://web.whatsapp.com" target="_blank"><div style="font-size:30px">💬</div><b>WhatsApp</b><span id="t-wa">واتساب</span></a>
-<a data-n="google جوجل google" href="https://google.com" target="_blank"><div style="font-size:30px">🔍</div><b>Google</b><span id="t-google">بحث جوجل</span></a>
-<a data-n="maps خرائط maps" href="https://maps.google.com" target="_blank"><div style="font-size:30px">🗺️</div><b>Maps</b><span id="t-maps">خرائط</span></a>
-</div>
-
-<div class="game"><h3 id="t-game">🎯 لعبة التصويب</h3><h2><span id="t-score">النقط</span>: <span id="score">0</span></h2><button class="shootBtn" onclick="points+=10;document.getElementById('score').textContent=points"><span id="t-shoot">🔫 اضرب !</span></button></div>
-
-<div class="contact">
-<b style="font-size:18px" id="t-contact">📞 للتواصل معنا</b>
-<b style="margin-top:6px">Dola عادل</b>
-<span>01062056341</span>
-<button class="copyBtn" onclick="copyNum()"><span id="t-copy">نسخ الرقم 📋</span></button>
-<div class="socialRow">
-<a class="waBtn" href="https://wa.me/201062056341" target="_blank">💬 <span id="t-waBtn" style="color:#fff">واتساب</span></a>
-<a class="igBtn" href="https://instagram.com" target="_blank">📸 <span id="t-igBtn" style="color:#fff">انستجرام</span></a>
-</div>
-<p style="font-size:12px;color:#999;margin:10px 0 0" id="t-contactNote">كلمنا واتساب أو انستجرام على نفس الرقم 📱</p>
-</div>
-
-<p style="color:#666;font-size:12px" id="t-footer">صُنع بحب ❤️ بواسطة Dola عادل | 2026</p>
-</div>
-
-<script>
-var points=0;
-var lang='ar';
-var AR={theme:'غير اللون',langBtn:'EN',online:'أونلاين',dola:'👑 Dola عادل',dolaSub:'الموقع الرسمي | Adel Hub 🚀',sub:'اختار أي حاجة وهتفتح معاك على طول 🚀',search:'🔍 دور هنا... مثلا تيك توك',fire:'العب فري فاير دلوقتي',dream:'سباق وعربيات مع صحابك',chat:'ذكاء اصطناعي',insta:'انستجرام',tele:'تليجرام',yt:'يوتيوب',
+.top{position:sticky;top:10px;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;background:rgba(0,0,0,.45);backdrop-filter:blur(15px);padding:8px;border-radius:50px;border:1px solid rgba(255,255,255,.15)}
+.top button{background:#fff;color:#000;border:0;padding:9px 14px;border-radius:50px;font-weight:900;cursor:pointer;font-size:13px}
+.live{font-size:12px;color:#00ff88;font-weight:900}
+/*
