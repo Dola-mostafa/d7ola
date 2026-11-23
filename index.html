@@ -3,74 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>عادل | دولا</title>
+<title>عادل | دولا 🔥</title>
 <style>
 :root{--bg:#05060f;--main:#ff2d55;--main2:#7c3aed;--text:#fff}
 *{box-sizing:border-box}
-body{margin:0;background:radial-gradient(600px 300px at 20% 0%,#7c3aed55,transparent),radial-gradient(600px 300px at 90% 20%,#ff2d5555,transparent),var(--bg);color:var(--text);font-family:sans-serif;padding:14px 14px 90px;text-align:center}
+body{margin:0;background:radial-gradient(600px 300px at 20% 0%,#7c3aed66,transparent),radial-gradient(600px 300px at 90% 20%,#ff2d5566,transparent),var(--bg);color:var(--text);font-family:sans-serif;padding:14px 14px 90px;text-align:center;overflow-x:hidden}
 .box{max-width:480px;margin:auto}
-.top{position:sticky;top:10px;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;background:rgba(0,0,0,.45);backdrop-filter:blur(15px);padding:8px;border-radius:50px;border:1px solid rgba(255,255,255,.15)}
-.top button{background:#fff;color:#000;border:0;padding:9px 14px;border-radius:50px;font-weight:900;cursor:pointer;font-size:13px}
-.live{font-size:12px;color:#00ff88;font-weight:900}
-/* الاسم بالخط في النص */
-.nameBox{background:linear-gradient(135deg,var(--main),var(--main2),#00d2ff);padding:2px;border-radius:28px;margin:16px 0}
-.nameInner{background:#0b0b18;padding:20px 12px;border-radius:26px}
-.avatar{width:90px;height:90px;margin:auto;background:linear-gradient(135deg,var(--main),#00d2ff);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:900;border:3px solid #fff;box-shadow:0 0 25px var(--main)}
+.top{position:sticky;top:10px;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;background:rgba(0,0,0,.55);backdrop-filter:blur(15px);padding:8px;border-radius:50px;border:1px solid rgba(255,255,255,.2)}
+.top button{background:#fff;color:#000;border:0;padding:9px 14px;border-radius:50px;font-weight:900;cursor:pointer;font-size:13px;box-shadow:0 0 15px #fff5}
+.live{font-size:12px;color:#00ff88;font-weight:900;animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.3}}
+/* الاسم روش */
+.hero{position:relative;background:linear-gradient(135deg,var(--main),var(--main2),#00d2ff,#ff2d55);background-size:300% 300%;animation:grad 4s ease infinite;padding:3px;border-radius:32px;margin:16px 0;box-shadow:0 0 35px var(--main)}
+@keyframes grad{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.heroInner{background:#0a0a18;padding:22px 12px;border-radius:30px}
+.avatar{width:96px;height:96px;margin:auto;background:conic-gradient(var(--main),#00d2ff,var(--main2),var(--main));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900;border:3px solid #fff;box-shadow:0 0 30px var(--main);animation:spin 6s linear infinite}
+@keyframes spin{100%{transform:rotate(360deg)}}
+.avatar span{animation:spin 6s linear infinite reverse}
 .nameRow{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px 0 4px}
-.nameRow h1{font-size:36px;margin:0;font-weight:900}
-.nameRow h1 span{color:#00d2ff}
-.divider{width:2px;height:42px;background:linear-gradient(var(--main),#00d2ff);border-radius:10px;box-shadow:0 0 10px #00d2ff}
-.nameSub{color:#bbb;font-size:13px;margin:0}
+.nameRow h1{font-size:38px;margin:0;font-weight:900;text-shadow:0 0 20px var(--main);animation:pop 2s ease infinite}
+@keyframes pop{50%{transform:scale(1.05)}}
+.nameRow h1 span{color:#00d2ff;text-shadow:0 0 20px #00d2ff}
+.divider{width:3px;height:48px;background:linear-gradient(var(--main),#00d2ff);border-radius:10px;box-shadow:0 0 15px #00d2ff}
+.marquee{overflow:hidden;white-space:nowrap;background:#ff2d5522;border:1px solid #ff2d55;border-radius:50px;padding:7px;margin-top:12px}
+.marquee div{display:inline-block;animation:mar 10s linear infinite;font-weight:900;font-size:13px}
+@keyframes mar{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
 .badges{display:flex;gap:6px;justify-content:center;margin-top:12px;flex-wrap:wrap}
 .badges span{background:#ffffff14;border:1px solid #ffffff22;padding:5px 10px;border-radius:20px;font-size:11px}
-.searchBox{display:flex;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:6px;border-radius:50px;margin:14px 0}
+.searchBox{display:flex;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:6px;border-radius:50px;margin:14px 0;box-shadow:0 0 20px #000}
 .searchBox input{flex:1;background:transparent;border:0;outline:0;color:var(--text);padding:10px;font-size:15px}
 .searchBox button{background:linear-gradient(90deg,var(--main),var(--main2));color:#fff;border:0;padding:10px 18px;border-radius:50px;font-weight:900}
-.secTitle{text-align:right;font-size:17px;font-weight:900;margin:16px 4px 8px}
-.secTitle span{color:var(--main)}
+.secTitle{text-align:right;font-size:18px;font-weight:900;margin:16px 4px 8px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:16px 8px;border-radius:22px;color:var(--text);text-decoration:none}
+.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:16px 8px;border-radius:24px;color:var(--text);text-decoration:none;transition:.2s}
+.card:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 10px 25px #0008}
 .card b{display:block;margin-top:6px} .card span{color:#bbb;font-size:11px}
 .big{grid-column:span 2;display:flex;gap:12px;align-items:center;text-align:right;color:#fff;padding:14px}
-.fire{background:linear-gradient(135deg,#ff2d55,#ff6b00)}
-.dream{background:linear-gradient(135deg,#7c3aed,#00d2ff)}
-.game{background:#111;border:1px solid var(--main);padding:16px;border-radius:24px;margin-top:8px}
-.shootBtn{background:linear-gradient(90deg,var(--main),var(--main2));color:#fff;border:0;padding:14px;width:100%;border-radius:50px;font-size:18px;font-weight:900;cursor:pointer}
-/* التواصل في الاخر */
-.contact{background:rgba(255,255,255,.07);border:1px solid var(--main);padding:20px;border-radius:28px;margin-top:16px}
-.contact .num{color:#fff;background:linear-gradient(90deg,var(--main),var(--main2));padding:12px;border-radius:50px;font-size:26px;font-weight:900;direction:ltr;margin:12px 0;display:block;letter-spacing:2px}
+.fire{background:linear-gradient(135deg,#ff2d55,#ff6b00);box-shadow:0 0 20px #ff2d5588}
+.dream{background:linear-gradient(135deg,#7c3aed,#00d2ff);box-shadow:0 0 20px #7c3aed88}
+.game{background:#111;border:2px dashed var(--main);padding:16px;border-radius:24px;margin-top:8px}
+.shootBtn{background:linear-gradient(90deg,var(--main),var(--main2));color:#fff;border:0;padding:14px;width:100%;border-radius:50px;font-size:19px;font-weight:900;cursor:pointer;box-shadow:0 0 20px var(--main)}
+.contact{background:rgba(255,255,255,.07);border:2px solid var(--main);padding:20px;border-radius:28px;margin-top:16px;box-shadow:0 0 30px #ff2d5544}
+.contact .num{color:#fff;background:linear-gradient(90deg,var(--main),var(--main2));padding:13px;border-radius:50px;font-size:27px;font-weight:900;direction:ltr;margin:12px 0;display:block;letter-spacing:2px;box-shadow:0 0 20px var(--main)}
 .copyBtn{background:#fff;color:#000;border:0;padding:11px 22px;border-radius:50px;font-weight:900;cursor:pointer}
 .socialRow{display:flex;gap:10px;margin-top:12px}
 .socialRow a{flex:1;padding:14px;border-radius:50px;font-weight:900;font-size:15px;text-decoration:none}
-.waBtn{background:#25D366!important;color:#fff!important}
+.waBtn{background:#25D366!important;color:#fff!important;box-shadow:0 0 15px #25D36688}
 .callBtn{background:#fff!important;color:#000!important}
 .igBtn{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af)!important;color:#fff!important}
-.bottomNav{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);width:calc(100% - 28px);max-width:480px;background:rgba(0,0,0,.7);backdrop-filter:blur(15px);border:1px solid rgba(255,255,255,.2);display:flex;justify-content:space-around;padding:10px;border-radius:50px;z-index:20}
+.bottomNav{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);width:calc(100% - 28px);max-width:480px;background:rgba(0,0,0,.75);backdrop-filter:blur(15px);border:1px solid rgba(255,255,255,.25);display:flex;justify-content:space-around;padding:10px;border-radius:50px;z-index:20}
 .bottomNav a{color:#fff;text-decoration:none;font-size:12px}
 .bottomNav a b{display:block;font-size:18px}
 </style>
 </head>
 <body>
 <div class="box">
-
 <div class="top">
 <button onclick="changeTheme()">🎨 <span id="t-theme">غير اللون</span></button>
 <button onclick="toggleLang()">🌐 <span id="t-langBtn">EN</span></button>
 <span class="live">● <span id="t-online">أونلاين</span></span>
 </div>
 
-<div class="nameBox"><div class="nameInner">
-<div class="avatar">A</div>
-
-<!-- عادل | دولا والخط في النص -->
+<div class="hero"><div class="heroInner">
+<div class="avatar"><span>🔥</span></div>
 <div class="nameRow">
 <h1 id="t-name1">عادل</h1>
 <div class="divider"></div>
 <h1><span id="t-name2">دولا</span></h1>
 </div>
-
-<p class="nameSub" id="t-dolaSub">الموقع الرسمي | Adel Hub 🚀</p>
-<div class="badges"><span>⭐ VIP</span><span>🔥 الأكثر زيارة</span><span>✅ موثق</span></div>
+<p style="color:#bbb;font-size:13px;margin:0" id="t-dolaSub">الموقع الرسمي | Adel Hub 🚀</p>
+<div class="marquee"><div>🔥 عادل | دولا - أجمد موقع في مصر 🔥 - فري فاير - دريم رود - واتساب - انستجرام 🔥</div></div>
+<div class="badges"><span>⭐ VIP</span><span>🔥 روش</span><span>✅ موثق</span><span>👑 الملك</span></div>
 </div></div>
 
 <div class="searchBox"><input id="s" oninput="f()" placeholder="🔍 دور هنا... مثلا تيك توك"><button onclick="f()">بحث</button></div>
@@ -92,7 +95,6 @@ body{margin:0;background:radial-gradient(600px 300px at 20% 0%,#7c3aed55,transpa
 <div class="secTitle">🎮 <span id="t-gameTitle2">العب واكسب</span></div>
 <div class="game"><h3 id="t-game">🎯 لعبة التصويب</h3><h2><span id="t-score">النقط</span>: <span id="score">0</span></h2><button class="shootBtn" onclick="points+=10;document.getElementById('score').textContent=points"><span id="t-shoot">🔫 اضرب !</span></button></div>
 
-<!-- التواصل في الاخر -->
 <div class="contact" id="contactBox">
 <b style="font-size:19px" id="t-contact">📞 للتواصل معنا</b>
 <b style="margin-top:8px" id="t-contactName">عادل | دولا</b>
@@ -123,19 +125,8 @@ var points=0;
 var lang='ar';
 var AR={theme:'غير اللون',langBtn:'EN',online:'أونلاين',name1:'عادل',name2:'دولا',dolaSub:'الموقع الرسمي | Adel Hub 🚀',gamesTitle:'ألعابك المفضلة',gameTitle2:'العب واكسب',search:'🔍 دور هنا... مثلا تيك توك',fire:'العب فري فاير دلوقتي',dream:'سباق وعربيات مع صحابك',chat:'ذكاء اصطناعي',insta:'انستجرام',tele:'تليجرام',yt:'يوتيوب',tiktok:'تيك توك',wa:'واتساب',google:'بحث جوجل',maps:'خرائط',game:'🎯 لعبة التصويب',score:'النقط',shoot:'🔫 اضرب !',contact:'📞 للتواصل معنا',contactName:'عادل | دولا',copy:'نسخ الرقم 📋',waBtn:'واتساب',callBtn:'اتصال',igBtn:'انستجرام',contactNote:'كلمنا واتساب أو اتصل بينا على نفس الرقم 📱',footer:'صُنع بحب ❤️ بواسطة عادل | دولا | 2026',navHome:'الرئيسية',navGames:'ألعاب',navContact:'تواصل',navWa:'واتساب'};
 var EN={theme:'Change Color',langBtn:'عربي',online:'Online',name1:'Adel',name2:'Dola',dolaSub:'Official Website | Adel Hub 🚀',gamesTitle:'Your Fav Games',gameTitle2:'Play & Win',search:'🔍 Search here... e.g TikTok',fire:'Play Free Fire Now',dream:'Racing & cars with friends',chat:'AI Chat',insta:'Instagram',tele:'Telegram',yt:'YouTube',tiktok:'TikTok',wa:'WhatsApp',google:'Google Search',maps:'Maps',game:'🎯 Shooting Game',score:'Score',shoot:'🔫 Shoot !',contact:'📞 Contact Us',contactName:'Adel | Dola',copy:'Copy Number 📋',waBtn:'WhatsApp',callBtn:'Call',igBtn:'Instagram',contactNote:'Contact us on WhatsApp or Call on same number 📱',footer:'Made with love ❤️ by Adel | Dola | 2026',navHome:'Home',navGames:'Games',navContact:'Contact',navWa:'WhatsApp'};
-function toggleLang(){
-lang=(lang==='ar'?'en':'ar');var d=(lang==='ar'?AR:EN);
-document.documentElement.lang=lang;document.documentElement.dir=(lang==='ar'?'rtl':'ltr');
-for(var k in d){var el=document.getElementById('t-'+k);if(el) el.textContent=d[k];}
-document.getElementById('s').placeholder=d.search;
-}
-var themes=[
-{bg:'#05060f',main:'#ff2d55',main2:'#7c3aed'},
-{bg:'#f8fafc',main:'#2563eb',main2:'#00d2ff'},
-{bg:'#000000',main:'#00ff88',main2:'#00d2ff'},
-{bg:'#1a0b2e',main:'#ffcc00',main2:'#ff6b00'},
-{bg:'#fff7ed',main:'#f97316',main2:'#ec4899'}
-];
+function toggleLang(){lang=(lang==='ar'?'en':'ar');var d=(lang==='ar'?AR:EN);document.documentElement.lang=lang;document.documentElement.dir=(lang==='ar'?'rtl':'ltr');for(var k in d){var el=document.getElementById('t-'+k);if(el) el.textContent=d[k];}document.getElementById('s').placeholder=d.search;}
+var themes=[{bg:'#05060f',main:'#ff2d55',main2:'#7c3aed'},{bg:'#f8fafc',main:'#2563eb',main2:'#00d2ff'},{bg:'#000000',main:'#00ff88',main2:'#00d2ff'},{bg:'#1a0b2e',main:'#ffcc00',main2:'#ff6b00'},{bg:'#fff7ed',main:'#f97316',main2:'#ec4899'}];
 var ti=0;
 function changeTheme(){ti=(ti+1)%themes.length;var t=themes[ti];var r=document.documentElement.style;r.setProperty('--bg',t.bg);r.setProperty('--main',t.main);r.setProperty('--main2',t.main2);}
 function f(){var q=document.getElementById('s').value.toLowerCase();document.querySelectorAll('#g a').forEach(a=>{var n=(a.getAttribute('data-n')||a.textContent).toLowerCase();a.style.display=n.includes(q)?'':'none';});}
